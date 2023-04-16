@@ -1,0 +1,20 @@
+<!--pages/home/home.wxml-->
+<!-- <mobx/> -->
+<view class="home-wrap">
+    <swiper indicator-dots autoplay circular>
+        <swiper-item wx:for="{{swiperList}}" wx:key="id">
+            <image class="slide-img" src="{{item.image}}" mode="widthFix" />
+        </swiper-item>
+    </swiper>
+    <view class="grid-list">
+    <!-- bindtap="handleGrid" -->
+        <navigator url="/pages/shoplist/shoplist?id={{item.id}}&name={{item.name}}" data-id="{{item.id}}" data-name="{{item.name}}" wx:for="{{gridList}}" wx:key="id" class="grid-item">
+            <image class="grid-item-img" src="{{item.icon}}" mode="" />
+            <text class="grid-item-name">{{item.name}}</text>
+        </navigator>
+    </view>
+    <view class="home-bottom">
+        <image class="recommend" src="../../images/link-01.png" mode="widthFix"></image>
+        <image class="forum" src="../../images/link-02.png" mode="widthFix"></image>
+    </view>
+</view>

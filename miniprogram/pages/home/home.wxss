@@ -1,0 +1,43 @@
+/* pages/home/home.wxss */
+.home-wrap {}
+
+.slide-img {
+    display: block;
+    margin: 0 auto;
+}
+
+.grid-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.grid-item {
+    width: 125px;
+    height: 100px;
+    box-sizing: border-box;
+    padding: 20px 16px 16px;
+    border-right: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.grid-item-img {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+.grid-item-name{
+    font-size: 14px;
+}
+
+.home-bottom {
+    display: flex;
+    flex-direction: row;
+}
+
+.recommend,
+.forum {
+    padding: 6px;
+}

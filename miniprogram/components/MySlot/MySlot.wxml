@@ -1,0 +1,15 @@
+<!--components/MySlot/MySlot.wxml-->
+<!-- 组件的封装者 -->
+<view class="slot-wrap">
+    <view>
+        这里是子组件的内部节点
+    </view>
+    <slot></slot>
+    <!-- name为before的第一个slot插槽 -->
+    <slot name="before"></slot>
+    <view>
+        这是一段固定的文本内容
+    </view>
+    <!-- name为after的第二个slot插槽 -->
+    <slot name="after"></slot>
+</view>

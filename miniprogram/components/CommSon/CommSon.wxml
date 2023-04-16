@@ -1,0 +1,5 @@
+<view>
+    子组件中，count的值为：{{count}}
+</view>
+<button bindtap="addCount" size="mini">+1</button>
+<button bindtap="emitFun">触发自定义事件testEV</button>

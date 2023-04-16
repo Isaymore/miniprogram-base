@@ -1,0 +1,12 @@
+function slicePhone(str) {
+    var strFormat = str
+    if (str.length === 11) {
+        strFormat = str.slice(0, 3) + '-' + str.slice(3, 7) + '-' + str.slice(7, 11)
+    }
+    console.log('111',strFormat,typeof strFormat)
+    return strFormat
+}
+
+module.exports = {
+    slicePhone: slicePhone
+}

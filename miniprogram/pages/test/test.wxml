@@ -1,0 +1,20 @@
+<!--pages/test/test.wxml-->
+<!-- <text class="g-red-text">pages/test/test.wxml</text> -->
+<!-- 组件的使用者 -->
+<comm-father></comm-father>
+<van-button type="primary">vant主要按钮</van-button>
+<van-button type="danger" bindtap="getInfo">vant警告按钮</van-button>
+<!-- <my-slot>
+	<view>
+        这里是插入到slot标签的内容
+    </view>
+    <view slot="before">这里是插入到标签slot name="before"中的内容</view>
+    <view slot="after">这里是插入到标签slot name="after"中的内容</view>
+</my-slot> -->
+<!-- <observers></observers> -->
+<!-- <view></view>
+<my-test1 max="666"></my-test1>
+<view>
+    <my-test2></my-test2>
+</view> -->
+<mobx/>

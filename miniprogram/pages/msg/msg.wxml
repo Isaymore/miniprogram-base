@@ -1,0 +1,12 @@
+<!--pages/msg/msg.wxml-->
+<view>{{m1.toUpper('username')}}</view>
+<!-- 调用m2模块中的方法 -->
+<view>{{m2.toLower('STEPHENCHOW')}}</view>
+<!-- 引用外联脚本，并命名为m2 -->
+<wxs src="./msg.wxs" module="m2"/>
+<wxs module="m1">
+    // 将英文字符串转换为大写形式
+    module.exports.toUpper = function (str) {
+        return str.toUpperCase()
+    }
+</wxs>

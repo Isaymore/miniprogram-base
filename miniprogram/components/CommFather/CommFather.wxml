@@ -1,0 +1,5 @@
+<!--components/CommFather/CommFather.wxml-->
+<!-- <text>components/CommFather/CommFather.wxml</text> -->
+<text>父组件中，count的值为: {{count}}</text>
+<comm-son bind: emitEV="testFun" count="{{count}}" bind: addCountEV="addCountFun" class="son-component"></comm-son>
+<button bindtap="getChild">获取子组件实例</button>

@@ -1,0 +1,6 @@
+{
+    "component": true,
+    "usingComponents": {
+        "comm-son": "/components/CommSon/CommSon"
+    }
+}
